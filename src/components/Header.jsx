@@ -76,7 +76,7 @@ const Header = () => {
         </nav>
 
         <Button className="hidden lg:flex" href={'https://enlift-ai.vercel.app/hashtag'} external>
-          HashTag
+          Be-A-Member
         </Button>
 
         <Button
