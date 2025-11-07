@@ -1,0 +1,86 @@
+<svg width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="aiGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#4facfe"/>
+            <stop offset="100%" stop-color="#00f2fe"/>
+        </linearGradient>
+        
+        <linearGradient id="pulseGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#4facfe" stop-opacity="0.8"/>
+            <stop offset="50%" stop-color="#00f2fe" stop-opacity="1"/>
+            <stop offset="100%" stop-color="#4facfe" stop-opacity="0.8"/>
+        </linearGradient>
+        
+        <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+            <feMerge>
+                <feMergeNode in="coloredBlur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        
+        <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+            <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(79, 172, 254, 0.1)" stroke-width="0.5"/>
+        </pattern>
+    </defs>
+    
+    <!-- Background grid -->
+    <rect width="100%" height="100%" fill="url(#grid)" />
+    
+    <!-- Abstract AI Symbol -->
+    <g transform="translate(50, 70)" filter="url(#glow)">
+        <!-- Main circuit/neural network base -->
+        <path d="M 20 30 L 60 30 L 60 70 L 100 70" 
+              stroke="url(#aiGradient)" 
+              stroke-width="3" 
+              fill="none" 
+              stroke-linecap="round"/>
+        
+        <!-- Ascending AI nodes -->
+        <circle cx="30" cy="30" r="5" fill="url(#aiGradient)"/>
+        <circle cx="70" cy="70" r="5" fill="url(#aiGradient)"/>
+        <circle cx="110" cy="30" r="5" fill="url(#aiGradient)"/>
+        
+        <!-- Connection lines showing upward movement -->
+        <path d="M 30 25 L 30 10" 
+              stroke="url(#aiGradient)" 
+              stroke-width="2" 
+              fill="none" 
+              stroke-dasharray="3,3"/>
+        <path d="M 70 65 L 70 50" 
+              stroke="url(#aiGradient)" 
+              stroke-width="2" 
+              fill="none" 
+              stroke-dasharray="3,3"/>
+        <path d="M 110 25 L 110 10" 
+              stroke="url(#aiGradient)" 
+              stroke-width="2" 
+              fill="none" 
+              stroke-dasharray="3,3"/>
+        
+        <!-- Pulse effect representing AI intelligence -->
+        <path d="M 0 50 Q 40 30 80 50 Q 120 70 160 50" 
+              stroke="url(#pulseGradient)" 
+              stroke-width="2" 
+              fill="none" 
+              opacity="0.7"/>
+        
+        <!-- Additional tech elements -->
+        <g transform="translate(180, 0)">
+            <!-- Data flow lines -->
+            <path d="M 0 20 L 40 20" stroke="url(#aiGradient)" stroke-width="1.5" stroke-dasharray="5,2"/>
+            <path d="M 0 40 L 40 40" stroke="url(#aiGradient)" stroke-width="1.5" stroke-dasharray="5,2"/>
+            <path d="M 0 60 L 40 60" stroke="url(#aiGradient)" stroke-width="1.5" stroke-dasharray="5,2"/>
+            
+            <!-- Binary code representation -->
+            <text x="50" y="25" font-family="monospace" font-size="12" fill="url(#aiGradient)">1010</text>
+            <text x="50" y="45" font-family="monospace" font-size="12" fill="url(#aiGradient)">1101</text>
+            <text x="50" y="65" font-family="monospace" font-size="12" fill="url(#aiGradient)">0110</text>
+        </g>
+    </g>
+    
+    <!-- Company Name -->
+    <text x="200" y="160" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="28" font-weight="600" fill="#ffffff">
+        EnLift-<tspan fill="url(#aiGradient)">AI</tspan>
+    </text>
+</svg>
