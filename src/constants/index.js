@@ -62,12 +62,12 @@ export const navigation = [
   {
     id: "4",
     title: "I-Studio",
-    url: "#roadmap",
+    url: "https://enlift-ai.vercel.app/dashboard",
   },
   {
     id: "5",
     title: "Roadmap",
-    url: "#roadmap",
+    url: "https://enlift-ai.vercel.app/roadmap",
   },
   {
     id: "6",
