@@ -75,7 +75,7 @@ const Header = () => {
           <HambugerMenu />
         </nav>
 
-        <Button className="hidden lg:flex" href={links.sourceCode} external>
+        <Button className="hidden lg:flex" href={'https://enlift-ai.vercel.app/hashtag'} external>
           HashTag
         </Button>
 
