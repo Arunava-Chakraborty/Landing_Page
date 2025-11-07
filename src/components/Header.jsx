@@ -40,7 +40,7 @@ const Header = () => {
           <img
             src={brainwave}
             width={190}
-            height={40}
+            height={10}
             alt="Brainwave"
             className="pointer-events-none select-none"
           />

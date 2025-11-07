@@ -36,7 +36,7 @@ export const HambugerMenu = () => {
           className="w-full h-full object-cover"
           src={background}
           width={688}
-          height={953}
+          height={30}
           alt="Background"
         />
       </div>
